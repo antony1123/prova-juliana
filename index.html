@@ -1,0 +1,83 @@
+<!DOCTYPEhtml>
+<metacharset="UTF-8"/>
+<html lang="pt-BR">
+  <head>
+     <title>musica</title>
+      <link rel="stylesheet" href="uni.css">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <script link="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script link="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body style="background-color:red;">
+       <h1 align="center">ESTILOS MUSICAIS PREFERIDOS</h1>
+       <a href="#nns"><button align="left" type="button">desenvolvedor</button></a>
+       <p align="center">nessa página irei mostrar meus estilos de musicas favoritos,mas não só isso eu quero saber o que você mais gosta</p>
+<img id="npc" src="feel invencible.jpg">
+
+<img id="npc" src="escape-the-fate.jpg">
+
+<img id="npc" src="x gon give it to ya.jpg">
+
+<img id="npc" src="im dangerous.jpg">
+
+<img id="npc" src="Animals.jpg">
+        <p align="center">eu gosto muito de rock esse é meu estilo preferido,a musica com aquele som auto pra min é espetacular gosto de cantores como maroon 5,skillet,the everlove,dmx entre outros</p>
+        <p align="center">agora vamos falar sobre você o que você mais gosta?</p>
+        <div>
+            <div class="jumbotron text-center">
+              <br>
+	      <input type="text" oninput="paca(this.value)">
+              </br>
+              <br>
+              <select id="musica" onChange="update()">
+			<option value="pt">rockeiro</option>
+			<option value="en">sertaneiro</option>
+			<option value="es">funkeiro</option>
+                        <option value="ea">forrozeiro</option>
+                        <option value="ei">sambeiro</option>
+		</select>
+                </br>
+                <br></br>
+                <type="text" id="value">
+		<type="text" id="text">
+		<script type="text/javascript">
+			var select;
+                        var option;
+                        var sd;
+                        var opt;
+                        var dda;
+                        function update() {
+				select = document.getElementById('musica');
+				option = select.options[select.selectedIndex];
+                                
+				sd=document.getElementById('value').value = option.value;
+				opt=document.getElementById('text').value = option.text;
+			}
+
+			update();
+                        function paca (lele){
+                           dda=lele;
+                        }
+                        function nns(){
+                           window.alert(`bem vindo(a)!${opt} ${dda}`);
+
+
+                       }
+		</script>
+<button type="button" onclick="nns()">mensagem pra você depois de completar tudo</button>
+       </div>
+ </div>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<div align="center">
+     <img align="center" src="madara.jpg" id="nns">
+     <p>um aluno que esta cursando analise e desenvolvimento de sistemas que sonha em um dia produzir um jogo incrivel </p>
+</div>
+  </body>
+</html>
